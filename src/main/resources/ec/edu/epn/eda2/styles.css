@@ -1,0 +1,111 @@
+/* Colores EPN */
+.root {
+    -epn-rojo: #E5361B;
+    -epn-rojo-oscuro: #B82812;
+    -epn-azul: #0B2357;
+    -epn-azul-claro: #1C3A7A;
+    -epn-dorado: #F2B132;
+    -epn-blanco: #FFFFFF;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Franjas ---------- */
+.franja-roja-gruesa {
+    -fx-background-color: -epn-rojo;
+    -fx-min-height: 46; -fx-pref-height: 46;
+}
+.franja-roja-media   { -fx-background-color: -epn-rojo; -fx-min-height: 14; -fx-pref-height: 14; }
+.franja-roja-delgada { -fx-background-color: -epn-rojo; -fx-min-height: 8;  -fx-pref-height: 8; }
+.franja-blanca       { -fx-background-color: -epn-blanco; -fx-min-height: 6; -fx-pref-height: 6; }
+.franja-azul-media   { -fx-background-color: -epn-azul; -fx-min-height: 24; -fx-pref-height: 24; }
+.franja-azul-gruesa  { -fx-background-color: -epn-azul; -fx-min-height: 46; -fx-pref-height: 46; }
+
+.texto-franja {
+    -fx-text-fill: -epn-blanco;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Fondo y decoraciones ---------- */
+.fondo-decorado {
+    -fx-background-color: linear-gradient(to bottom right, #F5F7FC, #E3E9F5);
+    -fx-padding: 20;
+}
+.tri-azul { -fx-fill: -epn-azul; -fx-opacity: 0.92; }
+.tri-rojo { -fx-fill: -epn-rojo; }
+
+.linea-ornamento { -fx-background-color: -epn-rojo; -fx-min-height: 3; -fx-pref-height: 3; -fx-max-height: 3; }
+.rombo { -fx-fill: -epn-azul; }
+
+.tarjeta {
+    -fx-background-color: -epn-blanco;
+    -fx-background-radius: 14;
+    -fx-border-color: -epn-azul transparent transparent transparent;
+    -fx-border-width: 6 0 0 0;
+    -fx-border-radius: 14 14 0 0;
+    -fx-padding: 26 44 30 44;
+    -fx-effect: dropshadow(gaussian, rgba(11,35,87,0.28), 24, 0.15, 0, 6);
+}
+
+/* ---------- Inicio ---------- */
+.titulo    { -fx-text-fill: -epn-azul; -fx-font-size: 32px; -fx-font-weight: bold; }
+.subtitulo { -fx-text-fill: -epn-rojo; -fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 4 0 0 0; }
+.etiqueta  { -fx-text-fill: #7A86A3; -fx-font-size: 11px; -fx-font-weight: bold; }
+.nombre    { -fx-text-fill: -epn-azul; -fx-font-size: 18px; }
+
+.boton-rojo {
+    -fx-background-color: -epn-rojo;
+    -fx-text-fill: -epn-blanco;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 11 56 11 56;
+    -fx-background-radius: 24;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(229,54,27,0.4), 10, 0.2, 0, 3);
+}
+.boton-rojo:hover   { -fx-background-color: -epn-rojo-oscuro; }
+.boton-rojo:pressed { -fx-background-color: -epn-azul; }
+
+/* ---------- Menú ---------- */
+.header-azul       { -fx-background-color: linear-gradient(to right, #0B2357, #1C3A7A); }
+.header-titulo     { -fx-text-fill: -epn-blanco; -fx-font-size: 24px; -fx-font-weight: bold; }
+.header-subtitulo  { -fx-text-fill: -epn-dorado; -fx-font-size: 15px; -fx-font-weight: bold; }
+.header-nombre     { -fx-text-fill: #C9D3EC; -fx-font-size: 13px; }
+
+.boton-borde {
+    -fx-background-color: transparent;
+    -fx-border-color: -epn-blanco;
+    -fx-border-radius: 18;
+    -fx-background-radius: 18;
+    -fx-text-fill: -epn-blanco;
+    -fx-font-size: 13px;
+    -fx-padding: 6 18 6 18;
+    -fx-cursor: hand;
+}
+.boton-borde:hover { -fx-background-color: -epn-rojo; -fx-border-color: -epn-rojo; }
+
+.menu-titulo { -fx-text-fill: -epn-azul; -fx-font-size: 24px; -fx-font-weight: bold; }
+
+.opcion-menu {
+    -fx-background-color: -epn-blanco;
+    -fx-border-color: -epn-azul;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10 18 10 12;
+    -fx-cursor: hand;
+    -fx-alignment: center-left;
+}
+.opcion-menu:hover { -fx-background-color: -epn-azul; }
+.opcion-menu:hover .opcion-texto,
+.opcion-menu:hover .opcion-flecha { -fx-text-fill: -epn-blanco; }
+
+.opcion-numero {
+    -fx-background-color: -epn-rojo;
+    -fx-background-radius: 21;
+    -fx-text-fill: -epn-blanco;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+.opcion-texto  { -fx-text-fill: -epn-azul; -fx-font-size: 18px; -fx-font-weight: bold; }
+.opcion-flecha { -fx-text-fill: -epn-rojo; -fx-font-size: 26px; -fx-font-weight: bold; }
