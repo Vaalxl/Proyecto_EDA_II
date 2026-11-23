@@ -22,9 +22,6 @@ Requisitos: JDK 17 o superior y Maven.
 mvn clean javafx:run
 ```
 
-En NetBeans / IntelliJ: abrir la carpeta como proyecto Maven y ejecutar `ec.edu.epn.eda2.Main`
-(o el goal `javafx:run`).
+En NetBeans: abrir la carpeta como proyecto Maven y ejecutar la clase Main
 
-## Notas
-- Cada opción del menú muestra "Módulo en construcción". Para conectar un módulo,
-  edite `MenuController.seleccionarTema(...)`.
+
